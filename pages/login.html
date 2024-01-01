@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/login.css" />
+</head>
+<body>
+
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar">
+        <a href="../index.html" class="navbar_logo">
+            <h1>BORANA</h1>
+        </a>
+        <ul class="navbar_main" id="#">
+            <li class="nav_item">
+                <a href="../index.html#about" class="nav_link">About Us</a>
+            </li>
+            <li class="nav_item">
+                <a href="../pages/faq.html" class="nav_link">Queries</a>
+            </li>
+            <li class="nav_item">
+                <a href="./menu.html" class="nav_link">Menu</a>
+            </li>
+            <li class="nav_item">
+                <a href="myCoff.html" class="nav_link">MyCoff</a>
+            </li>
+            <li class="nav_item">
+                <a href="../pages/login.html" class="nav_link"><iconify-icon class="icon-log" icon="icon-park-solid:people"></iconify-icon>Login</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Navbar End -->
+
+
+
+    <div class="reg-sty">
+        <div class="wrapper">
+            <div class="title-text">
+                <div class="title login">~ Login ~</div>
+                <div class="title signup">~ Signup ~</div>
+            </div>
+            <div class="form-container">
+                <div class="slide-controls">
+                    <input type="radio" name="slide" id="login" checked>
+                    <input type="radio" name="slide" id="signup">
+                    <label for="login" class="slide login">Login</label>
+                    <label for="signup" class="slide signup">Signup</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <div class="form-inner">
+                    <form action="#" class="login">
+                        <div class="field">
+                            <input type="text" placeholder="Email Address" required>
+                        </div>
+                        <div class="field">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <div class="pass-link"><a href="#">Forgot password?</a></div>
+                        <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Login">
+                        </div>
+                        <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+                    </form>
+                    <form action="#" class="signup">
+                        <div class="field">
+                            <input type="text" placeholder="Email Address" required>
+                        </div>
+                        <div class="field">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <div class="field">
+                            <input type="password" placeholder="Confirm password" required>
+                        </div>
+                        <div class="field btn">
+                            <div class="btn-act"></div>
+                            <input type="submit" value="Signup">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer Start -->
+    <div class="footer_part">
+        <div class="footer_data">
+            <div class="footer_data_info">
+                <h4 class="footer_cont_title">~ Contact us ~</h4>
+                <p><iconify-icon icon="carbon:circle-filled"></iconify-icon><i class="cont_info"> Mar del Plata</i></p>
+                <p><iconify-icon icon="carbon:circle-filled"></iconify-icon><i class="cont_info"></i> +012 345 67890</p>
+                <p><iconify-icon icon="carbon:circle-filled"></iconify-icon><a class="cont_info" href = "mailto: abc@example.com">Send Email</a></p>
+            </div>
+            <div class="footer_data_media">
+                <h4 class="footer_cont_media">~ Social Media ~</h4>
+                <p>Don't forget to follow us so you don't miss out on any news</p>
+                <div class="social_medias">
+                    <a class="social_medias_links" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="social_medias_links" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social_medias_links" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="social_medias_links" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer_data_schedules">
+                <h4 class="schedules_title">~ Open Hours ~</h4>
+                <div>
+                    <h5 class="schedules_info">Monday - Friday</h5>
+                    <p>8.00 AM - 8.00 PM</p>
+                    <h5 class="schedules_info">Saturday - Sunday</h5>
+                    <p>2.00 PM - 8.00 PM</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer_data_copy">
+            <p class="footer_copy">Copyright &copy; <a class="footer_pyme" href="./index.html">BORANA</a>. All Rights Reserved.</a></p>
+            <a class="footer_data_poli" href="https://aws.amazon.com/es/service-terms/">Terms of Use │ Privacy Policy </a>
+        </div>
+    </div>
+    <!-- Footer End -->
+</body>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script type="text/javascript" src="../JS/app.js"></script>
+    <script>
+        const loginText = document.querySelector(".title-text .login");
+        const loginForm = document.querySelector("form.login");
+        const loginBtn = document.querySelector("label.login");
+        const signupBtn = document.querySelector("label.signup");
+        const signupLink = document.querySelector("form .signup-link a");
+        signupBtn.onclick = (()=>{
+            loginForm.style.marginLeft = "-50%";
+            loginText.style.marginLeft = "-50%";
+        });
+        loginBtn.onclick = (()=>{
+            loginForm.style.marginLeft = "0%";
+            loginText.style.marginLeft = "0%";
+        });
+        signupLink.onclick = (()=>{
+            signupBtn.click();
+            return false;
+        });
+    </script>
